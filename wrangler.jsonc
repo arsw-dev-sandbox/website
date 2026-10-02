@@ -1,0 +1,14 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "sandbox",
+  "compatibility_date": "2026-09-01",
+  // Static files only: a Worker script (`main`) appears when the site needs code per request, such as a form
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page"
+  },
+  // The preview address until the domain goes live; preview URLs serve each branch's build. The custom domains are
+  // attached outside this file (Aryan's fleet Terraform), and deploys leave them alone
+  "workers_dev": true,
+  "preview_urls": true
+}

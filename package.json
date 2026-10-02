@@ -1,0 +1,13 @@
+{
+  "name": "website",
+  "private": true,
+  "packageManager": "pnpm@11.8.0",
+  "scripts": {
+    "build": "echo 'No build step yet: public/ is served as is'",
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev"
+  },
+  "devDependencies": {
+    "wrangler": "4.143.0"
+  }
+}
