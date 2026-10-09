@@ -11,6 +11,6 @@
   },
   // The preview address until the domain goes live; preview URLs serve each branch's build. The custom domains are
   // attached outside this file (Aryan's fleet Terraform), and deploys leave them alone
-  "workers_dev": true,
+  "workers_dev": false,
   "preview_urls": true,
 }
