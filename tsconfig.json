@@ -1,0 +1,12 @@
+{
+  // The project's own TypeScript settings (wrangler.jsonc names this file): a Worker script, once the site has one, is
+  // compiled with these
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true
+  }
+}

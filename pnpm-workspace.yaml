@@ -1,0 +1,18 @@
+# New releases wait 3 days before they can be installed, and a package's trust level can't drop between versions.
+# Workers Builds checks the lockfile against both
+minimumReleaseAge: 4320
+
+shellEmulator: true
+
+trustPolicy: no-downgrade
+
+# Dependencies of dependencies come from the registry only: no git URLs or tarballs
+blockExoticSubdeps: true
+
+# Install fails when a dependency wants to run install scripts not approved in allowBuilds
+strictDepBuilds: true
+
+# Install scripts allowed to run: esbuild and workerd (both wrangler's) download their platform binaries
+allowBuilds:
+  esbuild: true
+  workerd: true
